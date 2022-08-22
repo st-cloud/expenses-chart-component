@@ -1,0 +1,52 @@
+:root {
+    /* Colors */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --pale-orange: hsl(33, 100%, 98%);
+
+    /* Typography */
+    --font-family: 'DM Sans', sans-serif;
+    --font-size--body: 18px;
+
+    /* Layout */
+    /* The designs were created to the following widths: */
+    /* - Mobile: 375px */
+    /* - Desktop: 1440px */
+}
+
+body {
+    background-color: var(--cream);
+    font-family: var(--font-family);
+    font-size: var(--font-size--body);
+    padding: 4rem .5rem;
+}
+
+.card {
+    border-radius: .5rem;
+}
+
+.card.card--header {
+    background-color: var(--soft-red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card.card--main {
+    background-color: var(--pale-orange);
+}
+
+.footer {
+    border-top: 1px solid var(--medium-brown);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}

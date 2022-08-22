@@ -1,0 +1,20 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "FE Mentor Expenses Chart",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st-cloud/expenses-chart-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st-cloud/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/st-cloud/expenses-chart-component#readme",
+  "dependencies": {}
+}

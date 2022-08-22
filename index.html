@@ -3,41 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./styles/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <style>
-  </style>
 </head>
 <body>
   <main>
-    <div class="card">
-      My balance
-      $921.48
-      <img class="logo" src="./images/logo.svg"/>
-    </div>
-    <div class="card">
-      <div>
-        Spending - Last 7 days
-
-        mon
-        tue
-        wed
-        thu
-        fri
-        sat
-        sun
+    <section class="card card--header header">
+      <div class="header__text">
+        <h1 class="header__title">My balance</h1>
+        <p class="header__value">$921.48</p>
       </div>
-      <div>
-        Total this month
-        $478.33
-
-        +2.4%
-        from last month
-      </div>
-    </div>
+      <img class="header__logo" src="./images/logo.svg"/>
+    </section>
+    <section class="card card--main">
+      <figure class="chart"> 
+        <figcaption class="chart__title">Spending - Last 7 days</figcaption>
+        <div class="chart__value">
+          mon
+          tue
+          wed
+          thu
+          fri
+          sat
+          sun
+        </div>
+      </figure>
+      <dl class="footer">
+        <div class="total">
+          <dt class="total__title">Total this month</dt>
+          <dd class="total__value">$478.33</dd>
+        </div>
+        <div class="change">
+          <dt class="change__title">from last month</dt>
+          <dd class="change__value">+2.4%</dd>
+        </div>
+      </dl>
+    </section>
   </main>
   <!-- <footer>
     <div class="attribution">
@@ -45,5 +50,6 @@
       Coded by <a href="#">Grace Brown</a>.
     </div>
   </footer>  -->
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
